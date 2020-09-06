@@ -40,7 +40,7 @@ describe('test stack implementation', () => {
         stack.push(5);
         stack.push(3);
         stack.push(7);
-        const removed = stack.dequeue();
+        const removed = stack.pop();
         expect(removed).toEqual(7);
     });
 });

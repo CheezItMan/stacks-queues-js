@@ -17,7 +17,7 @@ describe("test queue implementation", () => {
         q.enqueue(10);
         q.enqueue(20);
         q.enqueue(30);
-        expect(q.toString()).toEqual("[10, 20, 30]");
+        expect(q.toString()).toEqual("[10,20,30]");
     });
 
     it("starts the queue empty", () => {
@@ -49,7 +49,7 @@ describe("test queue implementation", () => {
         q.enqueue(7);
         const removed = q.dequeue();
         expect(removed).toEqual(5);
-        expect(q.toString()).toEqual("[10, 20, 30]");
+        expect(q.toString()).toEqual("[3,7]");
     });
 
     it('properly adjusts size with enqueueing and dequeueing', () => {
@@ -98,7 +98,7 @@ describe("test queue implementation", () => {
         q.enqueue(200);
         q.enqueue(210);
         q.dequeue();
-        expect(q.toString()).toEqual('[40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210]');
+        expect(q.toString()).toEqual('[40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210]');
     });
 
 });
