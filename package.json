@@ -1,0 +1,18 @@
+{
+  "name": "stacks-queues",
+  "version": "1.0.0",
+  "description": "Stack and queue practice in Javascript based on Ruby version at https://github.com/Ada-C13/stacks-queues",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}
