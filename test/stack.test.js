@@ -1,6 +1,6 @@
 const Stack = require("../lib/stack");
 
-describe('test stack implementation', () => {
+describe.skip('test stack implementation', () => {
     it("creates a queue", () => {
         const stack = new Stack();
         expect(stack).toBeInstanceOf(Stack);
